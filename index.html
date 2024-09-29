@@ -117,7 +117,7 @@
                         </div>
                         <div style="width:90%;margin:0 auto;height: 100px;background-color: #E3F0F8;padding: 10px;">
                             <div style="margin-bottom: 12px;"><span
-                                    style="font-size: 13px;font-weight: bold;color: #787878;">同学， 你好:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你被录取位{{institute}}2025级别推荐免试硕士研究生， 请确认。</span></div>
+                                    style="font-size: 13px;font-weight: bold;color: #787878;">同学， 你好:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;恭喜你被录取位{{institute}}2025级别推荐免试{{type}}研究生， 请确认。</span></div>
 
                      
                             <!-- <div style="display: flex; align-items: center; background-color: #f2f3f5; border: 1px solid #e1f3d8; border-radius: 4px; padding: 0px 12px; margin: 5px 120px; max-width: fit-content;width: 400px;">
@@ -230,6 +230,13 @@
                             <input type="text" v-model="acc_time" />
                         </td>
                     </tr>
+                    <tr>
+                        <td class="headtd">学术类型</td>
+                        <td>：</td>
+                        <td>
+                            <input type="text" v-model="type" />
+                        </td>
+                    </tr>
                 </table>
             </div>
             <div class="col-md-4"></div>
@@ -252,7 +259,8 @@
     var2: '非定向就业',
     office: "计算机科学与技术学院研究生办公室",
     enrolltime: "研究生院 2024-09-28 10:30",
-    acc_time: "9月28日 10:45"
+    acc_time: "9月28日 10:45",
+    type:"硕士"
 }
     })
 </script>
